@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>УМАЙ — Татарские и башкирские украшения</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="loader" id="loader">
+    <div class="bg-blur"></div>
+    <div class="brand" id="brand">УМАЙ</div>
+    <div class="slogan" id="slogan">Пусть история говорит за тебя</div>
+  </div>
+
+  <!-- Основное содержимое -->
+  <div id="main" style="display:none;">
+    <header>
+      <h1>Каталог украшений</h1>
+      <nav class="categories">
+        <button data-category="all" class="cat-active">Все</button>
+        <button data-category="nakosniki">Накосники</button>
+        <button data-category="earrings">Серьги</button>
+        <button data-category="pendants">Кулоны</button>
+        <button data-category="rings">Кольца</button>
+        <button data-category="bracelets">Браслеты</button>
+      </nav>
+    </header>
+
+    <section class="catalog" id="catalog"></section>
+    <button id="cart-btn">🛒 Корзина (<span id="cart-count">0</span>)</button>
+    <div id="cart-modal" class="modal"></div>
+  </div>
+
+  <script src="js/catalog.js"></script>
+</body>
+</html>
